@@ -28,22 +28,23 @@ int main()
     cin>>pilmenu;
     switch (pilmenu){
     case 1:
+                    login:
                     system("cls");
+                    cout << "===|LOGIN PAGE|==="<<endl;
                     cout << "Masukkan Id: "; cin >> profile.id;
                     cout << "Masukkan Password: "; cin >> profile.pass;
                     if (akun.first == NULL)
                     {
                         cout << "Id dan Password Salah" << endl;
-                        cout << "Sudah? (y/n)"; cin >> done;
+                        cout << "Apakah ada ingin Login Ulang (y/n)"; cin >> done;
                         if (done == 'y' or done == 'Y')
                         {
-                            goto menu;
+                            goto login;
                         }
                         else
                         {
-                            goto menu1;
+                            goto menu;
                         }
-
                     }
                     else
                     {
@@ -56,7 +57,19 @@ int main()
                             {
                                 cout << "Id dan Password Benar" << endl;
                                 cout << "Masukkan Satu Huruf Untuk Melanjutkan "; cin >> done;
-                                goto menu1;
+                                goto menu1;}
+                        else{
+                        cout << "Id dan Password Salah" << endl;
+                        cout << "Apakah ada ingin Login Ulang (y/n)"; cin >> done;
+                        if (done == 'y' or done == 'Y')
+                        {
+                            goto login;
+                        }
+                        else
+                        {
+                            goto menu;
+                        }
+                        }
             menu1:
                     system("CLS");
                     cout<< "===|Welcome "<<profile.nama<<" |=="<<endl;
@@ -66,7 +79,28 @@ int main()
                     cout<< "   4.Edit Koleksi"<<endl;
                     cout<< "   5.Log out"<<endl;
                     cin>>pilmenu;
+                    switch(pilmenu){
+                    case 1:
+                           system("CLS");
+                           cout<<"===|PROFILE DETAIL|==="<<endl;
+                           cout<<"ID        : "<<profile.id<<endl;
+                           cout<<"Password  : "<<profile.pass<<endl;
+                           cout<<"Nama      : "<<profile.nama<<endl;
+                           cout<<"Umur      : "<<profile.umur<<endl;
+                           cout<<"No HP     : "<<profile.no_hp<<endl;
+                           cin>>pilmenu;
 
+                    case 2:
+                           cout<<"===|PROFILE EDIT PAGE|=== " <<profile.nama<<" |=="<<endl;
+                           cout<<"----->> Old data <<-----
+
+                    case 3:
+                            cout<<"===|Tampil Koleksi "<<profile.nama<<" |=="<<endl;
+                    case 4:
+                            cout<<"===|Edit Koleksi "<<profile.nama<<" |=="<<endl;
+                    case 5:
+                            cout<<"===|Keluar|==="<<endl;
+                    }
     case 2:
             menu2:
                     system("CLS");
@@ -95,4 +129,4 @@ int main()
             cout<<endl<<endl<< "Terimakasih~"<<endl;
 
 };
-}}}
+}}
