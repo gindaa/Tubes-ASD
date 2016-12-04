@@ -10,3 +10,16 @@
 	"ASD.h"
 	<cstdlib>
 
+1480862830 source:e:\tubes-asd-master\tubes-asd-master\asd.cpp
+	"ASD.h"
+	<cstdlib>
+
+1480866658 e:\tubes-asd-master\tubes-asd-master\asd.h
+	<iostream>
+
+1480869647 source:e:\tubes-asd-master\tubes-asd-master\main.cpp
+	<iostream>
+	"ASD.h"
+	<cstdlib>
+	<string>
+
