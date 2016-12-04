@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1480229105 source:g:\scl dcmnt\tubes asd\asd\asd.cpp
+	"ASD.h"
+
+1480229072 g:\scl dcmnt\tubes asd\asd\asd.h
+	<iostream>
+
+1480751471 source:g:\scl dcmnt\tubes asd\asd\main.cpp
+	<iostream>
+	"ASD.h"
+	<cstdlib>
+
+1480862830 source:e:\tubes-asd-master\tubes-asd-master\asd.cpp
+	"ASD.h"
+	<cstdlib>
+
+1480866658 e:\tubes-asd-master\tubes-asd-master\asd.h
+	<iostream>
+
+1480869647 source:e:\tubes-asd-master\tubes-asd-master\main.cpp
+	<iostream>
+	"ASD.h"
+	<cstdlib>
+	<string>
+
+1480862830 source:c:\users\gin\downloads\tubes-asd-master\tubes-asd-master\tubes-asd-master\asd.cpp
+	"ASD.h"
+	<cstdlib>
+
+1480866658 c:\users\gin\downloads\tubes-asd-master\tubes-asd-master\tubes-asd-master\asd.h
+	<iostream>
+
